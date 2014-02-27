@@ -1,37 +1,22 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://guides.cocoapods.org/syntax/podspec.html
-#
 Pod::Spec.new do |s|
-  s.name             = "boost"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of boost."
-  s.description      = <<-DESC
-                       An optional longer description of boost
+  s.name         = "boost"
+  s.version      = "1.55"
+  s.summary      = "Boost provides free peer-reviewed portable C++ source libraries."
+  s.description  = <<-DESC
+We emphasize libraries that work well with the C++ Standard Library. Boost libraries are intended to be widely useful, and usable across a broad spectrum of applications. The Boost license encourages both commercial and non-commercial use.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "waTeim" => "truthset@gmail.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/NAME'
+We aim to establish "existing practice" and provide reference implementations so that Boost libraries are suitable for eventual standardization. Ten Boost libraries are included in the C++ Standards Committee's Library Technical Report (TR1) and in the new C++11 Standard. C++11 also includes several more Boost libraries in addition to those from TR1. More Boost libraries are proposed for TR2.
+                   DESC
+  s.homepage     = "http://boost.org/"
+  s.screenshots  = 
+  s.license      = 'BOOST'
+  s.author       = { "waTeim" => "truthset@gmail.com" }
+  s.source       = { :git => "https://github.com/waTeim/boost.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
-  s.requires_arc = true
-
-  s.source_files = 'Classes'
-  s.resources = 'Assets'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.platform     = :osx, '10.6'
+  s.requires_arc = false
+  s.vendored_libraries = 'lib/*.a'
+  s.source_files = 'include/**/*.hpp'
+  s.public_header_files = 'include/**/*.hpp'
+  s.preserve_paths = 'include','include/boost'
 end
