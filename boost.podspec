@@ -24,7 +24,14 @@ We aim to establish "existing practice" and provide reference implementations so
     'include/**/**/**/**/**/*.{h,hpp}',
     'include/**/**/**/**/**/**/*.{h,hpp}',
     'include/**/**/**/**/**/**/**/*.{h,hpp}'
-  s.public_header_files = 'include/**/*.hpp'
+  s.public_header_files =
+    'include/**/*.{h,hpp}',
+    'include/**/**/*.{h,hpp}',
+    'include/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/**/**/*.{h,hpp}'
   s.preserve_paths = 
     'include',
     'include/boost',
