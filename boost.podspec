@@ -16,6 +16,14 @@ We aim to establish "existing practice" and provide reference implementations so
   s.platform     = :osx, '10.6'
   s.requires_arc = false
   s.vendored_libraries = 'lib/*.a'
+  s.source_files = 
+    'include/**/*.{h,hpp}',
+    'include/**/**/*.{h,hpp}',
+    'include/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/**/*.{h,hpp}',
+    'include/**/**/**/**/**/**/**/*.{h,hpp}'
   s.public_header_files =
     'include/**/*.{h,hpp,ipp}',
     'include/**/**/*.{h,hpp,ipp}',
