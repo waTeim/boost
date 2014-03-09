@@ -11,7 +11,7 @@ We aim to establish "existing practice" and provide reference implementations so
   s.screenshots  = 
   s.license      = 'BOOST'
   s.author       = { "waTeim" => "truthset@gmail.com" }
-  s.source       = { :git => "https://github.com/waTeim/boost.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/waTeim/boost.git" , :tag => s.version.to_s }
 
   s.platform     = :osx, '10.6'
   s.requires_arc = false

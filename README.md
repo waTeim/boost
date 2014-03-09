@@ -16,6 +16,11 @@ it simply add the following line to your Podfile:
 
     pod "boost"
 
+## Notes
+
+These libraries were compiled using clang and -std=c++11 to better correspond to the
+default Xcode build flags.
+
 ## Author
 
 waTeim, truthset@gmail.com
