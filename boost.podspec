@@ -1,11 +1,26 @@
 Pod::Spec.new do |s|
   s.name         = "boost"
   s.version      = "1.55"
-  s.summary      = "Boost provides free peer-reviewed portable C++ source libraries."
+  s.summary      = "Boost provides free peer-reviewed portable C++ source libraries. With additionally netlib-cpp"
   s.description  = <<-DESC
+BOOST
+
 We emphasize libraries that work well with the C++ Standard Library. Boost libraries are intended to be widely useful, and usable across a broad spectrum of applications. The Boost license encourages both commercial and non-commercial use.
 
 We aim to establish "existing practice" and provide reference implementations so that Boost libraries are suitable for eventual standardization. Ten Boost libraries are included in the C++ Standards Committee's Library Technical Report (TR1) and in the new C++11 Standard. C++11 also includes several more Boost libraries in addition to those from TR1. More Boost libraries are proposed for TR2.
+
+
+NETLIB
+
+The project aims to build upon the latest C++ standard (currently C++11) to
+provide easy to use libraries for network programming. We use the latest
+compiler versions and features with an eye on pushing the boundaries on
+leveraging what's available in C++.
+
+Currently the library contains an HTTP client and server implementation, a
+stand-alone URI library, a network message framework, and some concurrency tools.
+
+Home http://cpp-netlib.org/
                    DESC
   s.homepage     = "http://boost.org/"
   s.screenshots  = 
