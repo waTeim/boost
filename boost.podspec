@@ -26,7 +26,6 @@ Home http://cpp-netlib.org/
   s.license      = 'BOOST'
   s.author       = { "waTeim" => "truthset@gmail.com" }
   s.source       = { :git => "https://github.com/waTeim/boost.git" , :tag => s.version.to_s }
-  s.frameworks   = 'boost'
   s.platform     = :osx, '10.6'
   s.requires_arc = false
   s.vendored_libraries = 'lib/*.a'
