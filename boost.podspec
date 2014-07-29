@@ -23,7 +23,6 @@ stand-alone URI library, a network message framework, and some concurrency tools
 Home http://cpp-netlib.org/
                    DESC
   s.homepage     = "http://boost.org/"
-  s.screenshots  = 
   s.license      = 'BOOST'
   s.author       = { "waTeim" => "truthset@gmail.com" }
   s.source       = { :git => "https://github.com/waTeim/boost.git" , :tag => s.version.to_s }
@@ -31,7 +30,7 @@ Home http://cpp-netlib.org/
   s.platform     = :osx, '10.6'
   s.requires_arc = false
   s.vendored_libraries = 'lib/*.a'
-  s.source_files = s.public_header_files =
+  s.preserve_paths = s.public_header_files =
     'include/**/*.{h,hpp,ipp}',
     'include/**/**/*.{h,hpp,ipp}',
     'include/**/**/**/*.{h,hpp,ipp}',
