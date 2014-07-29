@@ -30,7 +30,7 @@ Home http://cpp-netlib.org/
   s.platform     = :osx, '10.6'
   s.requires_arc = false
   s.vendored_libraries = 'lib/*.a'
-  s.preserve_paths = s.public_header_files = 
+  s.preserve_paths = s.source_files = s.public_header_files = 
     'include/**/*.{h,hpp,ipp}',
     'include/**/**/*.{h,hpp,ipp}',
     'include/**/**/**/*.{h,hpp,ipp}',
