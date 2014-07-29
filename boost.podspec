@@ -26,11 +26,12 @@ Home http://cpp-netlib.org/
   s.license      = 'BOOST'
   s.author       = { "waTeim" => "truthset@gmail.com" }
   s.source       = { :git => "https://github.com/waTeim/boost.git" , :tag => s.version.to_s }
-
+  s.frameworks   = 'boost'
   s.platform     = :osx, '10.6'
   s.requires_arc = false
   s.vendored_libraries = 'lib/*.a'
-  s.preserve_paths = s.source_files = s.public_header_files = 
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/boost/include"' }
+  s.private_header_files = s.source_files =
     'include/**/*.{h,hpp,ipp}',
     'include/**/**/*.{h,hpp,ipp}',
     'include/**/**/**/*.{h,hpp,ipp}',
